@@ -5,7 +5,7 @@ import { Home } from '../../src/components/Home';
 describe('home test suite', ()=>{
     test('renders component correctly', ()=>{
         const  { getByText }  = render(<Home />);
-        const helloText = getByText(/Welcome to the home page/i);
+        const helloText = getByText(/Welcome to the home page test/i);
         expect(helloText).toBeInTheDocument();
     })
 });
